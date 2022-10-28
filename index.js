@@ -3,9 +3,10 @@ const fs = require('fs');
 const http = require('http');
 
 const server  = http.createServer((req, res) =>{
-    const filePath = path.join(__dirname,'public',req.url === "/" ? "index.html":req.url)
+    const filePath = path.join(__dirname,'public',req.url === "/" ? "index.html":req.url === "/home" ? "index.html": req.url)
     let contentType = getContentType(filePath) || 'text.html';
     let emptyPage = path.join(__dirname,'public',"404.html")
+    
     fs.readFile(filePath,'utf-8',(err,data) =>{
         if(err){
             if(err.code === "ENOENT"){
