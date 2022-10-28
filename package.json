@@ -1,0 +1,27 @@
+{
+  "name": "zuri-node",
+  "version": "1.0.0",
+  "description": "node http module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damil27/Zuri-Node.js.git"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Damilare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damil27/Zuri-Node.js/issues"
+  },
+  "homepage": "https://github.com/damil27/Zuri-Node.js#readme",
+  "devDependencies": {
+   
+  }
+}
