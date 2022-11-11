@@ -10,9 +10,8 @@ const userSchema = new Schema({
     description : {
         type: String,
         required: true,
-        unique: true,
         minLength: 3,
-        maxLength: 30
+        maxLength: 255,
     },
 }, {timestamps: true});
 
