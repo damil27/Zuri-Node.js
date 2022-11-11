@@ -1,0 +1,25 @@
+
+
+GET http://localhost:3000/todo HTTP/1.1
+
+####
+GET http://localhost:3000/todo/636eb535f3ff3adb5b7c7cef HTTP/1.1
+
+###
+POST http://localhost:3000/todo HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": " first title",
+    "description": " this idescription"
+}
+###
+PUT http://localhost:3000/todo/636ec0b96dc8fea82cde6ee3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": " second title UPDATED",
+    "description": " description UPDATE"
+}
+###
+DELETE http://localhost:3000/todo/636ec0af6dc8fea82cde6ee1 HTTP/1.1
